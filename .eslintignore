@@ -1,0 +1,9 @@
+node_modules
+build
+scripts
+lib
+dist
+public
+test
+config
+.*.js
