@@ -22,6 +22,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
       ecmaFeatures: {
+        legacyDecorators: true,
         jsx: true,
       },
       ecmaVersion: 2018,

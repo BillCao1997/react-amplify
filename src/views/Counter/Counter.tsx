@@ -1,5 +1,5 @@
 import { Button, Card, CardActions, Typography, CardContent } from '@material-ui/core';
-import { action, observable } from 'mobx';
+import { action, computed, observable } from 'mobx';
 import { observer } from 'mobx-react';
 import React from 'react';
 
@@ -8,13 +8,17 @@ class Counter extends React.Component {
   @observable
   counter = 0;
 
+  @computed
+  get counterCount(): number {
+    return this.counter + 1;
+  }
+
   @action
   increment = (): void => {
     this.counter += 1;
-    console.log(this.counter);
   };
 
-  render = (): React.ReactNode => {
+  render(): JSX.Element {
     return (
       <Card variant="outlined">
         <CardContent>
@@ -28,7 +32,7 @@ class Counter extends React.Component {
         </CardActions>
       </Card>
     );
-  };
+  }
 }
 
 export default Counter;

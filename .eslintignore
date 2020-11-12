@@ -6,4 +6,4 @@ dist
 public
 test
 config
-.*.js
+*.js
