@@ -1,0 +1,5 @@
+type Counting @model {
+  id: ID!
+  name: String!
+  number: Int
+}

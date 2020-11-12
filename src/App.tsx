@@ -1,4 +1,3 @@
-/* eslint-disable max-classes-per-file */
 import { Container } from '@material-ui/core';
 import React from 'react';
 

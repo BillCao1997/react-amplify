@@ -12,7 +12,7 @@ class TopNav extends React.Component {
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6">News</Typography>
+          <Typography variant="h6">AWS Amplify</Typography>
         </Toolbar>
       </AppBar>
     );
